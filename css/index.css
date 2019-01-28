@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color:white;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section {
+    background-color: red;
+    flex: 1 1 100%;
+}
+
+main section:first-child {
+    background-color: blueviolet;
+}
+
+main section:nth-child(2) {
+    background-color:goldenrod;
+}

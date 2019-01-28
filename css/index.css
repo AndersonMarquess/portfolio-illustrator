@@ -13,11 +13,28 @@ body {
 }
 
 h1 {
+    font-size: 4em;
+}
+
+h2 {
     font-size: 3em;
-    color: white;
+}
+
+header, header h1, header h2 {
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    margin: 5em auto;
+}
+
+header h1, header h2 {
+    margin: 0 auto;
 }
 
 main {
+    max-width: 80%;
+    margin: 0 auto;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -27,10 +44,32 @@ main section {
     flex: 1 1 100%;
 }
 
-main section:first-child {
+section:first-child {
     background-color: blueviolet;
 }
 
-main section:nth-child(2) {
+section:nth-child(2) ul {
     background-color:goldenrod;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) li {
+    flex: 1 1 20%;
+    overflow: hidden;
+}
+
+section:nth-child(2) li:nth-child(even) {
+    background-color: blue;
+}
+section:nth-child(2) li:nth-child(odd) {
+    background-color: brown;
+}
+
+.container-img {
+    height: 100%;
+    
+    /* Ajusta a exibição da imagem */
+    position: relative;
+    left: -70%; /* -70% */
 }

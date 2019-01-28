@@ -45,7 +45,8 @@ main section {
 }
 
 section:first-child {
-    background-color: blueviolet;
+    background-color: #222;
+    margin-bottom: 1em;
 }
 
 section:nth-child(2) ul {
@@ -62,6 +63,7 @@ section:nth-child(2) li {
 section:nth-child(2) li:nth-child(even) {
     background-color: blue;
 }
+
 section:nth-child(2) li:nth-child(odd) {
     background-color: brown;
 }
@@ -72,4 +74,21 @@ section:nth-child(2) li:nth-child(odd) {
     /* Ajusta a exibição da imagem */
     position: relative;
     left: -70%; /* -70% */
+}
+
+.navbar-top ul {
+    display: flex;
+    /* Coloca todos os itens no centro do container */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-top li {
+    margin: 1em 2em;
+}
+
+.navbar-top a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
 }

@@ -34,61 +34,73 @@ header h1, header h2 {
 main {
     max-width: 80%;
     margin: 0 auto;
+    margin-bottom: 50px;
 
     display: flex;
     flex-wrap: wrap;
 }
 
 main section {
-    background-color: red;
     flex: 1 1 100%;
 }
 
-section:first-child {
+main section:first-child {
     background-color: #222;
     margin-bottom: 1em;
 }
 
-section:nth-child(2) ul {
-    background-color:goldenrod;
+main section:nth-child(2) ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-section:nth-child(2) li {
-    flex: 1 1 20%;
+main section:nth-child(2) li {
     overflow: hidden;
+    height: 395px;
+    flex-basis: 280px;
 }
 
-section:nth-child(2) li:nth-child(even) {
-    background-color: blue;
-}
-
-section:nth-child(2) li:nth-child(odd) {
-    background-color: brown;
-}
-
-.container-img {
-    height: 100%;
-    
-    /* Ajusta a exibição da imagem */
-    position: relative;
-    left: -70%; /* -70% */
-}
-
-.navbar-top ul {
+.navbar-center ul {
     display: flex;
     /* Coloca todos os itens no centro do container */
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.navbar-top li {
+.navbar-center li {
     margin: 1em 2em;
 }
 
-.navbar-top a {
+.navbar-center a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+}
+
+.illustrations img {
+    background-repeat: no-repeat;
+    background-size: 213%;
+    background-position: center;
+
+    width: 280px;
+    height: 395px;
+
+    /* Corrige a borda */
+    transform: scale(1.01);
+}
+
+img[class="img1"] {
+    background-image: url(../img/eirik-skarstein-1325650-unsplash.jpg);
+}
+
+img[class="img2"] {
+    background-image: url(../img/background_1.jpg);
+}
+img[class="img3"] {
+    background-image: url(../img/jake-blucker-1325852-unsplash\(1\).jpg);
+}
+
+img[class="img4"] {
+    background-image: url(../img/julius-jansson-1326014-unsplash\(1\).jpg);
 }

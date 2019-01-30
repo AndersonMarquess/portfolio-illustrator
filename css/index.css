@@ -52,6 +52,8 @@ main section {
 main section:first-child {
     background-color: #222;
     margin-bottom: 1em;
+    border-radius: 3px;
+    font-size: 1em;
 }
 
 main section:nth-child(2) ul {
@@ -151,10 +153,15 @@ img[class="img4"] {
     top: 0;
     width: 100%;
     z-index: 2;
+    animation: aparecerNav .5s;
 }
-
-.fix-navbar-padding-top {
-    padding-top: 70px;
+@keyframes aparecerNav {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .illustrations figure:hover {
@@ -180,4 +187,18 @@ img[class="img4"] {
 .illustrations figure:hover h3 {
     font-size: 2.25em;
     margin-bottom: 1em;
+}
+
+.nav-center-hidden-efect {
+    min-height: 3.5em; /*1.5 font e 2 margin*/
+    opacity: 0;
+    animation: desaparecerNav .3s;
+}
+@keyframes desaparecerNav {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

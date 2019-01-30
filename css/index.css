@@ -6,6 +6,7 @@
 body {
     background-color: black;
     color:white;
+    background-image: linear-gradient(to bottom right, #FF5722, #673AB7);
 }
 
 .background {
@@ -15,6 +16,7 @@ body {
     width: 100%;
     filter: blur(2px);
     z-index: -1;
+    display: none;
 }
 
 h1 {
@@ -87,7 +89,7 @@ main section:nth-child(2) li {
 
 .illustrations img {
     background-repeat: no-repeat;
-    background-size: 213%;
+    /* background-size: 213%; */
     background-position: center;
 
     width: 280px;
@@ -107,6 +109,18 @@ img[class="img3"] {
     background-image: url(../img/jake-blucker-1325852-unsplash\(1\).jpg);
 }
 img[class="img4"] {
+    background-image: url(../img/julius-jansson-1326014-unsplash\(1\).jpg);
+}
+img[class="img5"] {
+    background-image: url(../img/jake-blucker-1325852-unsplash\(1\).jpg);
+}
+img[class="img6"] {
+    background-image: url(../img/background_1.jpg);
+}
+img[class="img7"] {
+    background-image: url(../img/eirik-skarstein-1325650-unsplash.jpg);
+}
+img[class="img8"] {
     background-image: url(../img/julius-jansson-1326014-unsplash\(1\).jpg);
 }
 

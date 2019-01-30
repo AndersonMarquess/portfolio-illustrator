@@ -6,16 +6,29 @@ window.onscroll = function() {
 
 function navBarAdjustCSS() {
     if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("sec-navbar-top").classList.add("fixed-navbar");
-        changeCSS("none", "70px", "flex");
+        addClassePorIdElemento("sec-navbar-top", "fixed-navbar");
+        addClassePorIdElemento("sec-navbar-center", "nav-center-hidden-efect");
+        document.getElementsByTagName("body").item(0).style.paddingTop = "3.5em";
+        mudarDisplayPorIdElemento("nav-center-pages", "none");
+        mudarDisplayPorIdElemento("nav-top-pages", "flex");
     } else {
-        document.getElementById("sec-navbar-top").classList.remove("fixed-navbar");
-        changeCSS("block", "0px", "none");
+        removerClassePorIdElemento("sec-navbar-top", "fixed-navbar");
+        removerClassePorIdElemento("sec-navbar-center", "nav-center-hidden-efect");
+        document.getElementsByTagName("body").item(0).style.paddingTop = "0px";
+        mudarDisplayPorIdElemento("nav-center-pages", "block");
+        mudarDisplayPorIdElemento("nav-top-pages", "none");
     }
 }
 
-function changeCSS(displayNavCenterPages, paddingTopBody, displayNavTopPages) {
-    document.getElementById("nav-center-pages").style.display = displayNavCenterPages;
-    document.getElementsByTagName("body").item(0).style.paddingTop = paddingTopBody;
-    document.getElementById("nav-top-pages").style.display = displayNavTopPages;
+function addClassePorIdElemento(idElemento, classe) {
+    document.getElementById(idElemento).classList.add(classe);
+}
+
+function removerClassePorIdElemento(idElemento, classe) {
+    document.getElementById(idElemento).classList.remove(classe);
+}
+
+function mudarDisplayPorIdElemento(idElemento, opcaoDisplay) {
+    document.getElementById(idElemento).style.display = opcaoDisplay;
+
 }

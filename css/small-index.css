@@ -1,0 +1,47 @@
+/* CSS para telas pequenas */
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+aside section {
+    width: 90%;
+}
+
+main section:nth-child(2) li {
+    height: unset;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    margin-bottom: 1em;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.illustrations figcaption {
+    padding: 1em;
+}
+
+.illustrations figcaption h3 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+
+/* Barra de navegação */
+.navbar-top {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.navbar-top ul {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-top li {
+    margin: 1em 1.5em;
+}

@@ -156,3 +156,28 @@ img[class="img4"] {
 .fix-navbar-padding-top {
     padding-top: 70px;
 }
+
+.illustrations figure:hover {
+    position: relative;
+}
+
+.illustrations figure:hover figcaption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 90%;
+    padding: 5%;
+    /* Alinha o elemento no centro do pai com (-50%, -50%) */
+    transform: translate(0,-50%);
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 0 0 999px #000000cc, inset 0 0 0 999px #000000cc;
+    
+    /* Animação */
+    transition: box-shadow .2s, transform .5s;
+}
+
+.illustrations figure:hover h3 {
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}

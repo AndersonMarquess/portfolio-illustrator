@@ -88,7 +88,7 @@ main section:nth-child(2) li {
     font-size: 1.5em;
 }
 
-.illustrations img {
+.illustrations img, .illustrations .div-img {
     background-repeat: no-repeat;
     /* background-size: 213%; */
     background-position: center;
@@ -100,28 +100,28 @@ main section:nth-child(2) li {
     transform: scale(1.01);
 }
 
-img[class="img1"] {
+img[class="img1"], .img1 {
     background-image: url(../img/eirik-skarstein-1325650-unsplash.jpg);
 }
-img[class="img2"] {
+img[class="img2"], .img2 {
     background-image: url(../img/background_1.jpg);
 }
-img[class="img3"] {
+img[class="img3"], .img3 {
     background-image: url(../img/jake-blucker-1325852-unsplash\(1\).jpg);
 }
-img[class="img4"] {
+img[class="img4"], .img4 {
     background-image: url(../img/julius-jansson-1326014-unsplash\(1\).jpg);
 }
-img[class="img5"] {
+img[class="img5"], .img5 {
     background-image: url(../img/jake-blucker-1325852-unsplash\(1\).jpg);
 }
-img[class="img6"] {
+img[class="img6"], .img6 {
     background-image: url(../img/background_1.jpg);
 }
-img[class="img7"] {
+img[class="img7"], .img7 {
     background-image: url(../img/eirik-skarstein-1325650-unsplash.jpg);
 }
-img[class="img8"] {
+img[class="img8"], .img8 {
     background-image: url(../img/julius-jansson-1326014-unsplash\(1\).jpg);
 }
 
@@ -181,6 +181,7 @@ img[class="img8"] {
 
 .illustrations figure:hover {
     position: relative;
+    cursor: pointer;
 }
 
 .illustrations figure:hover figcaption {

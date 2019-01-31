@@ -30,5 +30,19 @@ function removerClassePorIdElemento(idElemento, classe) {
 
 function mudarDisplayPorIdElemento(idElemento, opcaoDisplay) {
     document.getElementById(idElemento).style.display = opcaoDisplay;
+}
 
+function changeMenuIcon() {
+    var menu = document.getElementById("menu-icon").classList;
+
+    if(!menu.contains("menu-close")) {
+        menu.add("menu-close");
+        mudarDisplayPorIdElemento("id-navbar-top", "flex");
+        addClassePorIdElemento("id-navbar-top", "menu-open-effect");
+        removerClassePorIdElemento("id-navbar-top", "menu-close-effect");
+    } else {
+        menu.remove("menu-close");
+        removerClassePorIdElemento("id-navbar-top", "menu-open-effect");
+        addClassePorIdElemento("id-navbar-top","menu-close-effect");
+    }
 }

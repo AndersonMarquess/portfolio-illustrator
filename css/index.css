@@ -7,6 +7,7 @@ body {
     background-color: black;
     color:white;
     background-image: linear-gradient(to bottom right, #FF5722, #673AB7);
+    /* background-image: linear-gradient(to right, #2980b9, #009688); */
 }
 
 .background {
@@ -193,6 +194,7 @@ img[class="img8"] {
     text-align: center;
     font-size: 1em;
     box-shadow: 0 0 0 999px #000000cc, inset 0 0 0 999px #000000cc;
+    color: white;
     
     /* Animação */
     transition: box-shadow .2s, transform .5s;

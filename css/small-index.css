@@ -11,6 +11,10 @@ aside section {
     width: 90%;
 }
 
+main section:nth-child(2) ul {
+    justify-content: space-around;
+}
+
 main section:nth-child(2) li {
     height: unset;
     box-sizing: border-box;
@@ -25,7 +29,17 @@ main section:nth-child(2) li {
     padding: 1em;
 }
 
-.illustrations figcaption h3 {
+.illustrations figure:hover figcaption {
+    position: unset;
+    padding: 1em;
+    transform: unset;
+    text-align: unset;
+    box-shadow: unset;
+    transition: unset;
+    color: black;
+}
+
+.illustrations figcaption h3, .illustrations figure:hover h3 {
     font-size: 1.3em;
     margin-bottom: .5em;
 }
@@ -34,6 +48,7 @@ main section:nth-child(2) li {
 .navbar-top {
     flex-wrap: wrap;
     flex-direction: column;
+    display: none;
 }
 
 .navbar-top ul {
@@ -44,4 +59,51 @@ main section:nth-child(2) li {
 
 .navbar-top li {
     margin: 1em 1.5em;
+}
+
+#menu-icon {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 4em;
+    height: 4em;
+    background-size: 64px;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    background-color: #222;
+    border-radius: 3px;
+}
+
+.menu-icon {
+    background-image: url(../img/menu.svg);
+}
+
+.menu-close {
+    background-image: url(../img/x.svg);
+}
+
+.menu-open-effect {
+    animation: menuOpen .5s forwards;
+}
+@keyframes menuOpen {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: flex;
+    }
+}
+
+.menu-close-effect {
+    animation: menuClose .5s forwards;
+}
+@keyframes menuClose {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }

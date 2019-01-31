@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/img_viewer.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 815px)" href="css/small-index.css" />
 </head>
     <body>
         <img class="background" src="img/background_1.jpg" alt="background image with an astronaut in space.">
 
         <section id="sec-navbar-top">
-            <i id="menu-icon" class="menu-icon" onclick="changeMenuIcon()"></i>
+            <i id="menu-icon" class="menu-icon" onclick="changeMenuIcon()" tabindex="1"></i>
             
             <nav id="id-navbar-top" class="navbar-top">
                 <ul id="nav-top-pages">
@@ -22,7 +23,6 @@
                     <li><a href="#">Illustra</a></li>
                     <li><a href="#">3D</a></li>
                     <li><a href="#">Sketch</a></li>
-
                 </ul>
 
                 <ul>
@@ -56,65 +56,64 @@
             <section class="illustrations">
                 <ul>
                     <li>
-                        <figure>
+                        <figure onclick="showFullImage('img1')">
+                            <!-- <a href="#"></a> -->
+                            <div class="div-img img1"></div>
+                            <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure onclick="showFullImage('img2')">
                             <a href="#">
-                                <img class="img1">
+                                <div class="div-img img2"></div>
                             </a>
                             <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
-                            <a href="#">
-                                <img class="img2">
-                            </a>
-                            <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
+                        <figure onclick="showFullImage('img3')">
                             <a href="#"> 
-                                <img class="img3">
+                                <div class="div-img img3"></div>
                             </a>
                             <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure onclick="showFullImage('img4')">
                             <a href="#"> 
-                                <img class="img4">
+                                <div class="div-img img4"></div>
                             </a>
                             <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure onclick="showFullImage('img5')">
                             <a href="#"> 
-                                <img class="img5">
+                                <div class="div-img img5"></div>
                             </a>
                             <figcaption> <h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure onclick="showFullImage('img6')">
                             <a href="#">
-                                <img class="img6">
+                                <div class="div-img img6"></div>
                             </a>
                             <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure onclick="showFullImage('img7')">
                             <a href="#"> 
-                                <img class="img7">
+                                <div class="div-img img7"></div>
                             </a>
                             <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure onclick="showFullImage('img8')">
                             <a href="#"> 
-                                <img class="img8">
+                                <div class="div-img img8"></div>
                             </a>
                             <figcaption><h3>Lorem Ipsum </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
                         </figure>
@@ -124,6 +123,13 @@
         </main>
 
         <aside>
+            <section id="sec-img-viewer">
+                <figure id="figure-main-viewer">
+                    <div id="img-viewer-id" class="img-viewer"></div>
+                    <figcaption><h3>Lorem Ipsum</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                </figure>
+            </section>
+
             <section id="sec-info">
                 <header>About</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur non sapien vel auctor.</p>
@@ -135,11 +141,12 @@
 
         <footer>
             <p>
-                &copy; 2019 Art By Lorem ipsum. Website created by Anderson Marques.
+                &copy; 2019 Art of Lorem ipsum. Website created by Anderson Marques.
             </p>
         </footer>
 
         <script type="text/javascript" src="js/nav_ctrl.js"></script>
+        <script type="text/javascript" src="js/img_viewer.js"></script>
 
     </body>
 </html>

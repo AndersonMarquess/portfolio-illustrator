@@ -3,12 +3,8 @@
     opacity: 1;
 }
 
-#sec-img-viewr {
-    position: relative;
-}
-
 #figure-main-viewer {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -17,6 +13,7 @@
     overflow: hidden;
     background-color: #000000e6;
     display: none;
+    z-index: 999;
 }
 
 #sec-img-viewer div {
@@ -35,7 +32,7 @@
 }
 
 #viewer-icon {
-    position: absolute;
+    position: fixed;
     right: 2em;
     top: 2em;
     width: 4em;

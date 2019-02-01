@@ -1,6 +1,8 @@
 
 #sec-img-viewer {
     opacity: 1;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 #figure-main-viewer {

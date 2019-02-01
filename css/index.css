@@ -4,6 +4,7 @@
 */
 
 body {
+    overflow-x: hidden;
     background-color: black;
     color:white;
     background-image: linear-gradient(to bottom right, #FF5722, #673AB7);
@@ -230,6 +231,7 @@ aside {
 aside section {
     background-color: #222;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 1em auto;
 }
 

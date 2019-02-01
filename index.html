@@ -27,7 +27,7 @@
 
                 <ul>
                     <li><a href="tel: 00000">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#sec-about">About</a></li>
                 </ul>
             </nav>
 
@@ -44,20 +44,19 @@
             <section id="sec-navbar-center">
                 <nav id="nav-center-pages" class="navbar-center">
                     <ul>
-                        <li><a href="#">Portraits</a></li>
-                        <li><a href="#">Covers</a></li>
-                        <li><a href="#">Illustra</a></li>
-                        <li><a href="#">3D</a></li>
-                        <li><a href="#">Sketch</a></li>
+                        <li><a href="#all">Portraits</a></li>
+                        <li><a href="#all">Covers</a></li>
+                        <li><a href="#all">Illustra</a></li>
+                        <li><a href="#all">3D</a></li>
+                        <li><a href="#all">Sketch</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <section class="illustrations">
+            <section id="all" class="illustrations">
                 <ul>
                     <li>
                         <figure onclick="showFullImage('img1')">
-                            <!-- <a href="#"></a> -->
                             <div class="div-img img1"></div>
                             <figcaption><h3>Lorem Ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
                         </figure>
@@ -108,7 +107,7 @@
             </section>
         </main>
 
-        <aside>
+        <aside class="bottom">
             <section id="sec-img-viewer">
                 <i id="viewer-icon" onclick="closeViewer()" tabindex="1"></i>
                 <figure id="figure-main-viewer" class="hidden-init">
@@ -117,7 +116,7 @@
                 </figure>
             </section>
 
-            <section id="sec-info">
+            <section id="sec-about" class="sec-info">
                 <header>About</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur non sapien vel auctor.</p>
                 <p>Phasellus gravida dignissim quam lobortis tincidunt.</p>

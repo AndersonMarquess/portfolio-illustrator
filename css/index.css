@@ -274,3 +274,25 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+nav li a {
+    position: relative;
+}
+
+a:hover::after {
+    content: ' ';
+    background-image: linear-gradient(to bottom right, #FF5722, #673AB7);
+    height: 5px;
+    position: absolute;
+    bottom: -.2em;
+    left: 0;
+    animation: grow .2s forwards;
+}
+@keyframes grow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
